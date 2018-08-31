@@ -1,3 +1,4 @@
+/* @flow */
 import React, { Component } from 'react';
 import {
   Text,
@@ -6,13 +7,17 @@ import {
 } from 'react-native';
 import {Agenda} from 'react-native-calendars';
 
+type Props = {};
+
 export default class AgendaScreen extends Component {
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
     this.state = {
       items: {}
     };
   }
+
+  props: Props;
 
   render() {
     return (

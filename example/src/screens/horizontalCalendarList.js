@@ -1,12 +1,17 @@
-import React, {Component} from 'react';
+/* @flow */
+import React, { Component } from 'react';
 
 import {CalendarList} from 'react-native-calendars';
 import {View} from 'react-native';
 
+type Props = {};
+
 export default class HorizontalCalendarList extends Component {
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
   }
+
+  props: Props;
 
   render() {
     return (

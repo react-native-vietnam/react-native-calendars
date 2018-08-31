@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+/* @flow */
+import React, { Component } from 'react';
 import {
   Text,
   StyleSheet,
@@ -7,12 +8,16 @@ import {
 } from 'react-native';
 import {Calendar} from 'react-native-calendars';
 
+type Props = {};
+
 export default class CalendarsScreen extends Component {
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
     this.state = {};
     this.onDayPress = this.onDayPress.bind(this);
   }
+
+  props: Props;
 
   render() {
     return (

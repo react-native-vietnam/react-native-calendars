@@ -1,11 +1,16 @@
-import React, {Component} from 'react';
+/* @flow */
+import React, { Component } from 'react';
 
 import {CalendarList} from 'react-native-calendars';
 
+type Props = {};
+
 export default class CalendarsList extends Component {
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
   }
+
+  props: Props;
 
   render() {
     return (

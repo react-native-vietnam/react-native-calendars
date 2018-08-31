@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+/* @flow */
+import React, { Component } from 'react';
 import {
   Text,
   View,
@@ -6,7 +7,10 @@ import {
   StyleSheet,
 } from 'react-native';
 
+type Props = {};
+
 export default class MenuScreen extends Component {
+  props: Props;
 
   render() {
     return (
