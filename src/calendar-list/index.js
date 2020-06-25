@@ -265,6 +265,10 @@ class CalendarList extends Component {
         }
         getItemLayout={this.getItemLayout}
         scrollsToTop={this.props.scrollsToTop}
+        onScrollBeginDrag={this.props.onScrollBeginDrag}
+        onScrollEndDrag={this.props.onScrollEndDrag}
+        onMomentumScrollBegin={this.props.onMomentumScrollBegin}
+        onMomentumScrollEnd={this.props.onMomentumScrollEnd}
       />
     )
   }
